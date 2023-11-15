@@ -82,19 +82,20 @@
     }
   }
 }
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 310px) {
   #dm_live_cricket {
     .logo {
       img {
-        max-width: 70px;
+        max-width: 60px;
       }
     }
     .info_box {
       h2 {
-        font-size: 18px;
+        font-size: 17px;
+        padding: 0px;
       }
       .button {
-        font-size: 12px;
+        font-size: 10px;
       }
     }
   }
