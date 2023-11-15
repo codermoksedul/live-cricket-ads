@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800;900&display=swap");
+
+#dm_live_cricket {
+  width: 100%;
+  max-width: 100%;
+  background: linear-gradient(45deg, #215c25, #215c25);
+  border-radius: 2px;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  font-family: "poppins", sans-serif;
+  text-decoration: none;
+  color: #ebedec;
+  width: 100%;
+  position: relative;
+  #dm_cricket_link {
+    z-index: 1;
+    position: absolute;
+    background-color: red;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img {
+      max-width: 100px;
+      display: block;
+    }
+  }
+  .info_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      font-size: 30px;
+      font-weight: bold;
+      color: #ebedec;
+      padding: 15px;
+      display: inline-block;
+      line-height: 30px;
+      margin: 0px;
+    }
+    .button {
+      color: #fff;
+      text-decoration: none;
+      background-color: red;
+      padding: 2px 15px;
+      border-radius: 2px;
+      display: inline-block;
+      margin-top: 0px;
+      animation: 0.6s live_name_animate infinite linear alternate;
+    }
+    @keyframes live_name_animate {
+      to {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #dm_live_cricket {
+    .logo {
+      img {
+        max-width: 70px;
+      }
+    }
+    .info_box {
+      h2 {
+        font-size: 22px;
+      }
+      .button {
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 300px) {
+  #dm_live_cricket {
+    .logo {
+      img {
+        max-width: 70px;
+      }
+    }
+    .info_box {
+      h2 {
+        font-size: 18px;
+      }
+      .button {
+        font-size: 12px;
+      }
+    }
+  }
+}
